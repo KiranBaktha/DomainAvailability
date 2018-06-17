@@ -22,7 +22,7 @@ def get_availability(words):
             domain = words[i] + '.com'
             response = requests.get("https://jsonwhois.com/api/v1/whois",headers={
                                 "Accept": "application/json",
-                                "Authorization": "Token token=<your token>"},
+                                "Authorization": "Token token=<your token>"},  # Replace your token key here
                         params={"domain": domain})
             content = response.content
             content = content.decode('utf-8')
