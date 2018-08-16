@@ -16,6 +16,11 @@ for pair in frequency_list.most_common():
 
 
 def get_availability(words):
+    """
+    Returns a dictionary with word as key and availability as value.
+    Input:
+        works - Iterable of words
+    """
     result = {}
     for i in range(len(words)):
         try:
