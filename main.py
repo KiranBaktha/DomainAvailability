@@ -9,7 +9,7 @@ import re
 words = []
 frequency_list = FreqDist(i.lower() for i in brown.words())
 for pair in frequency_list.most_common():
-    if len(pair[0]) >= 7 and re.fullmatch('[a-z]+',pair[0]) is not None: # Simple regex match to avoid special characters
+    if len(pair[0]) >= 7 and re.fullmatch('[a-z]+', pair[0]) is not None: # Simple regex match to avoid special characters
         words.append(pair[0])
     if len(words)==500:
         break
